@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 100%;
+            height: 100vh;
+            background-color: #e3f9ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .real {
+            width: 20%;
+            background: rebeccapurple;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form input {
+            margin-top: 10px;
+            height: 5vh;
+            outline: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   <div id="container">
+    <div class="real">
+        <h3>Enter your age</h3>
+        <form>
+            <input id="age"  type="number" placeholder="input your age">
+            <input type="submit">
+           </form>
+    </div>
+   </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").onsubmit = function () {
+        let age = document.getElementById('age').value;
+        if (18 <= age) {
+            alert('You are eligible press ok to continue')
+        } 
+        else{
+            alert('you are not eligible')
+        }
+        
+    }
+</script>
