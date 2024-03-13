@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="real">0</h1>
+     <button id="butts">count</button>
+     <button id="boott">count</button>
+</body>
+</html>
+<script>
+      let counter = 0;
+          let counter2 = 0;
+
+      function count() {
+        counter++;
+        document.getElementById('real').innerHTML += counter;
+
+       
+      }
+      document.getElementById('butts').onclick = count;
+
+      
+      function count2() {
+        counter2 --;
+        document.getElementById('real').innerHTML = counter2;
+
+        
+      }
+      document.getElementById('boott').onclick = count2;
+
+</script>
